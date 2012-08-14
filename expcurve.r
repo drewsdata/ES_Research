@@ -16,7 +16,7 @@ expcurvep + geom_boxplot(aes(fill = expcurved$Period),outlier.size=0) +
   scale_y_continuous(breaks=seq(0,200,5)) + opts(panel.grid.minor=theme_blank()) +
   stat_summary(fun.y=mean, geom="point", shape=7, size=5,color="white") +
   scale_fill_hue(name=" ES Globex Range\n Per Two Week\n Observation", breaks=c("E9R", "E8R", "E7R", "E6R", "E5R", "E4R", "E3R","E2R", "E1R","E0R"), labels=c("Mon_1", "Tues_1", "Wed_1", "Thurs_1", "Fri_1", "Mon_0", "Tues_0", "Wed_0", "Thurs_0", "Fri_0")) +
-  opts(title="ES Globex Range Contraction per Globex Session Over Two Weeks  \n 51 Two-Week Observations (08.08.2010 - 07.19.2012)") +
+  opts(title="ES Globex Range Contraction per Globex Session Over Two Weeks  \n Box Plot of 51 Two-Week Observations (08.08.2010 - 07.19.2012)") +
   opts(plot.title = theme_text(size=18, lineheight=1, face="bold"))
 
 
